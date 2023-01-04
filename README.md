@@ -1,1 +1,1 @@
-# junit-cucumber-rest-assured
+# rest-assured-cucumber
