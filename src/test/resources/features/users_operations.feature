@@ -9,32 +9,16 @@ Feature: All operations related to managing a user
     Given I have a valid userId
     When I fetch user details
     Then user information should be displayed
+  
+ Scenario: Update an existing user
+    Given I have a valid user
+    When I update the user name as "Nandini" and Job as "Software Engineer"
+    Then the user details should be updated
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  #Scenario: Delete a user by providing valid user 
-   # Given I have a valid username
-    #When i perform delete operation
-    #Then user should be deleted
+  Scenario: delete an existing user by providing valid user id
+    Given I have a valid userId as "2"
+    When  I invoke the delete operation
+    Then the user details should be deleted
+
+
+

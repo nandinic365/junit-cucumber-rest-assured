@@ -5,46 +5,53 @@
 	<groupId>rest_assured</groupId>
 	<artifactId>rest_assured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-		<dependency>
+  <dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.3.0</version>
+			<version>4.2.3</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-		<dependency>
+    <dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.3.0</version>
+			<version>4.2.3</version>
 			<scope>test</scope>
 		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.2</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-testng</artifactId>
+        <version>1.1.8</version>
+    </dependency>
+    <dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>4.5.0</version>
-			<scope>test</scope>
-		</dependency>
-
-	</dependencies>
-
-	
+    <dependency>
+	   <groupId>io.rest-assured</groupId>
+	   <artifactId>rest-assured</artifactId>
+		<version>4.5.0</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.7.0</version>
+            <configuration>
+               <source>1.8</source>
+               <target>1.8</target>
+               <encoding>UTF-8</encoding>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
 </project>
